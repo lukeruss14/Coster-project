@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Coasters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Custom Coasters</h1>
+  <p>Design your own coaster with names, sayings, or sports themes</p>
+</header>
+
+<!-- EXAMPLES SECTION -->
+<section class="examples">
+  <h2>Example Designs</h2>
+  <div class="coaster-grid">
+    <div class="coaster">Luke's Drink</div>
+    <div class="coaster sport">🏀 Basketball</div>
+    <div class="coaster">Best Dad Ever</div>
+    <div class="coaster sport">🏈 Football</div>
+  </div>
+</section>
+
+<!-- CUSTOMIZER -->
+<section class="customizer">
+  <h2>Create Your Coaster</h2>
+
+  <div class="controls">
+    <input type="text" id="textInput" placeholder="Enter your text">
+
+    <select id="themeSelect">
+      <option value="default">Default</option>
+      <option value="red">Red Theme</option>
+      <option value="blue">Blue Theme</option>
+      <option value="green">Green Theme</option>
+    </select>
+
+    <select id="iconSelect">
+      <option value="">No Icon</option>
+      <option value="🏀">Basketball</option>
+      <option value="🏈">Football</option>
+      <option value="⚾">Baseball</option>
+      <option value="⛳">Golf</option>
+    </select>
+
+    <button onclick="updateCoaster()">Update Design</button>
+  </div>
+
+  <!-- LIVE PREVIEW -->
+  <div class="preview">
+    <div id="customCoaster" class="coaster large">
+      Your Design
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Custom Coasters</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
